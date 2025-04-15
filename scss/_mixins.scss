@@ -1,0 +1,54 @@
+@import "variables";
+
+@mixin transparent-button {
+    border: 1px white solid;
+    border-radius: 20px;
+    
+    font-family: $font-family;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+    color: $p-color;
+
+    background: rgba(30, 30, 30, 0.20);
+    backdrop-filter: blur(4px);
+
+    transition: transform .2s ease-in-out, background-color .2s ease-in-out;
+
+    &:hover {
+        transform: translateY(-10px);
+        background-color: rgba(255,255,255,0.5);
+    }
+}
+
+@mixin column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin glass-box {
+    margin: 5px;
+    padding: 10px;
+    border: 1px white solid;
+    border-radius: 32px;
+    background: rgba(30, 30, 30, 0.20);
+    backdrop-filter: blur(54.75px);
+}
+
+@mixin mobile {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}

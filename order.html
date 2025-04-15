@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Uphorial Club - Заказать</title>
+    <link rel="stylesheet" href="css/order.css">
+</head>
+<body>
+    <div class="bg-gradient"> </div>
+    <header>
+        <h3 class="logo">Uphorial Club</h3>
+        <div class="menu-container">
+            <div class="menu">
+                <img src="img/icons/Home.svg" alt="Home" class="home">
+                <img src="img/icons/Info.svg" alt="Info" class="info">
+                <img src="img/icons/Order.svg" alt="Order" class="order">
+                <img src="img/icons/Login.svg" alt="Login" class="login">
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="container">
+            <h1 class="order-title">Заказать место</h1>
+            
+            <div class="order-columns">
+                <div class="left-column">
+                    <div class="order-form-container">
+                        <form class="order-form">
+                            <div class="form-group">
+                                <label for="name">Ваше имя</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="tariff">Выберите тариф</label>
+                                <select id="tariff" name="tariff" required>
+                                    <option value="">Выберите тариф</option>
+                                    <option value="standard">Стандарт - 3,5 р/час</option>
+                                    <option value="coworking">Коворкинг - 5 р/час</option>
+                                    <option value="vip">VIP - 7 р/час</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Дата посещения</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Время</label>
+                                <input type="time" id="time" name="time" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="duration">Продолжительность (часы)</label>
+                                <input type="number" id="duration" name="duration" min="1" max="12" value="2" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="comments">Комментарии</label>
+                                <textarea id="comments" name="comments" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="order-button">Забронировать</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="right-column">
+                    <div class="info-card">
+                        <div class="card-header">
+                            <h2>Информация о бронировании</h2>
+                        </div>
+                        <div class="card-body">
+                            <p>Выбирая наш клуб, вы получаете:</p>
+                            <ul class="benefits-list">
+                                <li>Комфортное рабочее место</li>
+                                <li>Высокоскоростной интернет</li>
+                                <li>Мощное оборудование</li>
+                                <li>Приятную атмосферу</li>
+                                <li>Профессиональную периферию</li>
+                            </ul>
+                            
+                            <div class="working-hours">
+                                <h3>Время работы</h3>
+                                <p>Пн-Пт: 10:00 - 22:00</p>
+                                <p>Сб-Вс: 12:00 - 00:00</p>
+                            </div>
+                            
+                            <div class="contact-info">
+                                <h3>Контакты</h3>
+                                <p>Телефон: +375 29 123-45-67</p>
+                                <p>Email: info@uphorial.club</p>
+                                <p>Адрес: г. Минск, ул. Примерная, 123</p>
+                            </div>
+                        </div>
+                        <div class="card-lines info-lines"></div>
+                        <div class="vector-bg info-vector"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <img src="img/Vector.svg" alt="Decoration" class="decor-vector vector-main">
+        <img src="img/Vector(1).svg" alt="Decoration" class="decor-vector vector-second">
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3 class="footer-logo">Uphorial Club</h3>
+                <div class="footer-info">
+                    <p>Телефон: <a href="tel:+375666666666">+375 66 666 66 66</a></p>
+                    <p>Email: <a href="mailto:support@uphorial.club">support@uphorial.club</a></p>
+                    <p>Адрес: г. Минск, ул. Свердлова, 13А</p>
+                </div>
+            </div>
+            <div class="footer-column">
+                <div class="footer-links">
+                    <a href="index.html">Главная</a>
+                    <a href="info.html">О нас</a>
+                    <a href="order.html">Заказать</a>
+                    <a href="account.html">Аккаунт</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="copyright">© 2025 Uphorial Club. Все права защищены.</div>
+            <div class="footer-social">
+                <a href="#">Instagram</a>
+                <a href="#">VK</a>
+                <a href="#">Telegram</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,249 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "header";
+@import "footer";
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: $background-color;
+	font-family: $font-family;
+	min-height: 100vh;
+	position: relative;
+	overflow-x: hidden;
+	background-image: linear-gradient(
+			rgba(20, 20, 20, 0.9) 1px,
+			transparent 1px
+		),
+		linear-gradient(90deg, rgba(20, 20, 20, 0.9) 1px, transparent 1px);
+	background-size: 40px 40px;
+	background-position: -1px -1px;
+
+	&.no-scroll {
+		overflow: hidden;
+	}
+
+	.bg-gradient {
+		position: absolute;
+		z-index: -1;
+		top: -300px;
+		border-radius: 808px;
+		background: #ff5e00;
+		filter: blur(800px);
+		width: 100%;
+		height: 300px;
+	}
+
+	.main-content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: calc(100vh - 80px);
+		padding: 20px;
+		position: relative;
+		z-index: 1;
+
+		.container {
+			width: 100%;
+			max-width: 800px;
+			position: relative;
+			z-index: 2;
+		}
+
+		.auth-card {
+			background: rgba(30, 30, 30, 0.7);
+			backdrop-filter: blur(10px);
+			border: 1px solid rgba(255, 255, 255, 0.1);
+			border-radius: 24px;
+			padding: 40px;
+			width: 100%;
+			position: relative;
+			overflow: hidden;
+
+			.auth-title {
+				color: $p-color;
+				font-size: 36px;
+				font-weight: 500;
+				text-align: center;
+				margin-bottom: 32px;
+			}
+
+			.auth-form {
+				display: flex;
+				flex-direction: column;
+				gap: 24px;
+
+				.form-group {
+					display: flex;
+					flex-direction: column;
+					gap: 8px;
+
+					label {
+						color: $p-color;
+						font-size: 16px;
+						text-align: left;
+					}
+
+					input {
+						background: rgba(255, 255, 255, 0.05);
+						border: 1px solid rgba(255, 255, 255, 0.1);
+						border-radius: 8px;
+						padding: 12px;
+						color: $p-color;
+						font-size: 16px;
+						transition: border-color 0.3s ease;
+
+						&:focus {
+							border-color: $accent-color;
+							outline: none;
+						}
+					}
+
+					&.remember {
+						flex-direction: row;
+						align-items: center;
+						gap: 12px;
+
+						.checkbox-container {
+							display: flex;
+							align-items: center;
+							gap: 8px;
+							color: $p-color;
+							cursor: pointer;
+
+							input[type="checkbox"] {
+								width: 20px;
+								height: 20px;
+							}
+						}
+					}
+
+					.forgot-password {
+						color: $accent-color;
+						text-decoration: none;
+						font-size: 14px;
+						align-self: flex-end;
+
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+
+				.auth-button {
+					@include transparent-button;
+					width: 100%;
+					padding: 14px 0;
+					margin-top: 16px;
+					position: relative;
+					z-index: 1;
+
+					&::before {
+						content: "";
+						position: absolute;
+						width: 140%;
+						height: 150%;
+						background: $accent-color;
+						border-radius: 50%;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						filter: blur(30px);
+						opacity: 0.2;
+						z-index: -1;
+						transition: all 0.3s ease;
+					}
+
+					&:hover::before {
+						opacity: 0.4;
+						width: 150%;
+						height: 180%;
+						filter: blur(40px);
+					}
+
+					@include mobile {
+						width: 80%;
+						max-width: 280px;
+						align-self: center;
+
+						&::before {
+							width: 140%;
+							height: 150%;
+						}
+
+						&:hover::before {
+							width: 150%;
+							height: 180%;
+						}
+					}
+				}
+			}
+
+			.register-link {
+				margin-top: 24px;
+				text-align: center;
+				color: $p-color;
+
+				a {
+					color: $accent-color;
+					text-decoration: none;
+					margin-left: 8px;
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+
+		.shape-1 {
+			position: absolute;
+			z-index: 0;
+			left: -200px;
+			top: 3%;
+			transform: rotate(-15deg);
+			filter: blur(4px);
+			width: 700px;
+			height: auto;
+			opacity: 0.7;
+
+			@include mobile {
+				width: 400px;
+				left: -150px;
+				top: 15%;
+				filter: blur(8px);
+				opacity: 0.5;
+			}
+		}
+
+		.shape-2 {
+			position: absolute;
+			z-index: 0;
+			right: -100px;
+			bottom: -15%;
+			transform: rotate(25deg);
+			width: 350px;
+			height: auto;
+			opacity: 0.7;
+
+			@include mobile {
+				width: 340px;
+				right: -20px;
+				bottom: -15%;
+				opacity: 0.5;
+			}
+		}
+	}
+}

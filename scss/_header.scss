@@ -1,0 +1,230 @@
+// Базовые стили для всех страниц
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $background-color;
+    font-family: $font-family;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+
+    .bg-gradient {
+        position: absolute;
+        z-index: -1;
+        top: -300px;
+        border-radius: 808px;
+        background: #FF5E00;
+        filter: blur(800px);
+        width: 100%;
+        height: 300px;
+    }
+}
+
+// Стили для хедера
+body > header {
+    margin: 5px;
+    padding: 12px 128px;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    z-index: 100;
+    border: 1px white solid;
+    border-radius: 32px;
+    background: rgba(30, 30, 30, 0.20);
+    backdrop-filter: blur(54.75px);
+
+    @include mobile {
+        padding: 12px 20px;
+    }
+
+    > .logo {
+        font-weight: 300;
+        color: $p-color;
+        font-size: 24px;
+    }
+
+    > .menu-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        @include mobile {
+            position: relative;
+        }
+
+        > .menu {
+            display: flex;
+            flex-direction: row;
+            margin: auto 0;
+            gap: 52px;
+            
+            > img {
+                height: 24px;
+                &:hover {
+                    cursor: pointer;
+                    opacity: .7;
+                }
+            }
+
+            @include mobile {
+                position: absolute;
+                top: 40px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: rgba(30, 30, 30, 0.20);
+                backdrop-filter: blur(54.75px);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-top: none;
+                border-bottom-left-radius: 32px;
+                border-bottom-right-radius: 32px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                height: 0;
+                opacity: 0;
+                pointer-events: none;
+                overflow: hidden;
+                transition: all 0.3s ease;
+                padding: 0;
+                margin: 0;
+                width: 40px;
+                box-shadow: none;
+                
+                &.active {
+                    opacity: 1;
+                    pointer-events: all;
+                    height: 180px;
+                    padding: 8px 0;
+                    gap: 16px;
+                }
+
+                &::before {
+                    display: none;
+                }
+
+                &::after {
+                    display: none;
+                }
+
+                > img {
+                    height: 24px;
+                    margin: 8px 0;
+                    transition: transform 0.2s ease;
+                    position: relative;
+                    z-index: 2;
+                    display: block;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        opacity: 0.7;
+                        background: transparent;
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+
+        > .hamburger {
+            display: none;
+            cursor: pointer;
+            z-index: 101;
+            margin-left: 20px;
+
+            @include mobile {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                position: relative;
+                padding: 0;
+                background: rgba(30, 30, 30, 0.20);
+                backdrop-filter: blur(54.75px);
+                border-radius: 32px;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-bottom-right-radius: 0;
+                border-bottom-left-radius: 0;
+
+                &:hover {
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                    border-bottom-right-radius: 32px;
+                    border-bottom-left-radius: 32px;
+                }
+
+                > span {
+                    position: absolute;
+                    width: 24px;
+                    height: 2px;
+                    background-color: white;
+                    transition: all 0.3s ease;
+
+                    &:nth-child(1) {
+                        top: 13px;
+                    }
+
+                    &:nth-child(2) {
+                        top: 20px;
+                    }
+
+                    &:nth-child(3) {
+                        top: 27px;
+                    }
+                }
+
+                &.active {
+                    border-bottom: none;
+                    
+                    &:hover {
+                        border-bottom: none;
+                        border-bottom-right-radius: 0;
+                        border-bottom-left-radius: 0;
+                    }
+                    
+                    > span {
+                        &:nth-child(1) {
+                            transform: rotate(45deg);
+                            top: 20px;
+                        }
+
+                        &:nth-child(2) {
+                            opacity: 0;
+                        }
+
+                        &:nth-child(3) {
+                            transform: rotate(-45deg);
+                            top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Базовые стили для main
+main {
+    min-height: calc(100vh - 80px);
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-top: 0;
+    
+    @include mobile {
+        padding: 10px;
+    }
+}
