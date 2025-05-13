@@ -1,37 +1,39 @@
 @import "variables";
 @import "mixins";
 @import "fonts";
-@import "header";
 
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-html, body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
+html {
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    background-color: $background-color;
-    font-family: $font-family;
-    min-height: 100vh;
-    position: relative;
-    overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	background-color: $background-color;
+	font-family: $font-family;
+	overflow-x: hidden;
+	width: 100%;
+	max-width: 100vw;
 
-    &.no-scroll {
-        overflow: hidden;
-    }
+	&.no-scroll {
+		overflow: hidden;
+	}
 
-    .bg-gradient {
-        position: absolute;
-        z-index: -1;
-        top: -300px;
-        border-radius: 808px;
-        background: #FF5E00;
-        filter: blur(800px);
-        width: 100%;
-        height: 300px;
-    }
-} 
+	.bg-gradient {
+		position: absolute;
+		z-index: -1;
+		top: -300px;
+		border-radius: 808px;
+		background: #ff5e00;
+		filter: blur(800px);
+		width: 95%;
+		height: 300px;
+	}
+}

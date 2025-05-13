@@ -1,18 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-html, body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
   margin: 0;
   padding: 0;
 }
 
 body {
+  margin: 0;
+  padding: 0;
   background-color: #1E1E1E;
   font-family: Rubik;
-  min-height: 100vh;
-  position: relative;
   overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
 }
 body.no-scroll {
   overflow: hidden;
@@ -22,16 +28,15 @@ body .bg-gradient {
   z-index: -1;
   top: -300px;
   border-radius: 808px;
-  background: #FF5E00;
+  background: #ff5e00;
   filter: blur(800px);
-  width: 100%;
+  width: 95%;
   height: 300px;
 }
 
 body > header {
-  margin: 5px;
-  padding: 12px 128px;
-  position: sticky;
+  width: 100%;
+  position: fixed;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -42,6 +47,7 @@ body > header {
   border-radius: 32px;
   background: rgba(30, 30, 30, 0.2);
   backdrop-filter: blur(54.75px);
+  padding: 30px 120px;
 }
 @media (max-width: 768px) {
   body > header {
@@ -78,62 +84,51 @@ body > header > .menu-container > .menu > img:hover {
 }
 @media (max-width: 768px) {
   body > header > .menu-container > .menu {
-    position: absolute;
-    top: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(30, 30, 30, 0.2);
-    backdrop-filter: blur(54.75px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-top: none;
-    border-bottom-left-radius: 32px;
-    border-bottom-right-radius: 32px;
+    display: none;
+  }
+}
+body > header > .menu-container > .mobile-menu {
+  display: none;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  body > header > .menu-container > .mobile-menu {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start;
-    height: 0;
+    position: fixed;
+    top: -6%;
+    left: -1%;
+    gap: 30px;
+    width: 101vw;
+    height: 100vh;
     opacity: 0;
     pointer-events: none;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    padding: 0;
-    margin: 0;
-    width: 40px;
-    box-shadow: none;
+    transition: opacity 0.3s ease;
+    z-index: 501;
+    background-color: rgba(0, 0, 0, 0.9);
   }
-  body > header > .menu-container > .menu.active {
+  body > header > .menu-container > .mobile-menu.active {
     opacity: 1;
     pointer-events: all;
-    height: 180px;
-    padding: 8px 0;
-    gap: 16px;
   }
-  body > header > .menu-container > .menu::before {
-    display: none;
+  body > header > .menu-container > .mobile-menu .mobile-menu-item {
+    color: #FFFFFF;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
   }
-  body > header > .menu-container > .menu::after {
-    display: none;
-  }
-  body > header > .menu-container > .menu > img {
-    height: 24px;
-    margin: 8px 0;
-    transition: transform 0.2s ease;
-    position: relative;
-    z-index: 2;
-    display: block;
-  }
-  body > header > .menu-container > .menu > img:hover {
+  body > header > .menu-container > .mobile-menu .mobile-menu-item:hover {
+    color: #FF5E00;
     transform: scale(1.1);
-    opacity: 0.7;
-    background: transparent;
-    box-shadow: none;
   }
 }
 body > header > .menu-container > .hamburger {
   display: none;
   cursor: pointer;
-  z-index: 101;
+  z-index: 700;
   margin-left: 20px;
 }
 @media (max-width: 768px) {
@@ -149,13 +144,6 @@ body > header > .menu-container > .hamburger {
     backdrop-filter: blur(54.75px);
     border-radius: 32px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-  body > header > .menu-container > .hamburger:hover {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    border-bottom-right-radius: 32px;
-    border-bottom-left-radius: 32px;
   }
   body > header > .menu-container > .hamburger > span {
     position: absolute;
@@ -173,14 +161,6 @@ body > header > .menu-container > .hamburger {
   body > header > .menu-container > .hamburger > span:nth-child(3) {
     top: 27px;
   }
-  body > header > .menu-container > .hamburger.active {
-    border-bottom: none;
-  }
-  body > header > .menu-container > .hamburger.active:hover {
-    border-bottom: none;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
   body > header > .menu-container > .hamburger.active > span:nth-child(1) {
     transform: rotate(45deg);
     top: 20px;
@@ -194,22 +174,24 @@ body > header > .menu-container > .hamburger {
   }
 }
 
-main {
-  min-height: calc(100vh - 80px);
-  padding: 20px;
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-  margin-top: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 99;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
-@media (max-width: 768px) {
-  main {
-    padding: 10px;
-  }
+.menu-overlay.active {
+  display: block;
+  opacity: 1;
 }
 
 footer {
-  width: 100%;
   background: rgba(20, 20, 20, 0.8);
   backdrop-filter: blur(10px);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -309,26 +291,8 @@ footer .footer-bottom .footer-social a:hover {
   color: #FF5E00;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-html,
 body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: #1E1E1E;
-  font-family: Rubik;
-  min-height: 100vh;
-  position: relative;
-  overflow-x: hidden;
-  background-image: linear-gradient(rgba(20, 20, 20, 0.9) 1px, transparent 1px), linear-gradient(90deg, rgba(20, 20, 20, 0.9) 1px, transparent 1px);
+  background-image: linear-gradient(rgba(20, 20, 20, 0.9) 1px, transparent 1px) linear-gradient(90deg, rgba(20, 20, 20, 0.9) 1px, transparent 1px);
   background-size: 40px 40px;
   background-position: -1px -1px;
 }
@@ -349,10 +313,12 @@ body .main-content {
   padding: 40px 20px 80px;
   position: relative;
   z-index: 1;
+  padding-top: 120px;
 }
 @media (max-width: 768px) {
   body .main-content {
     padding: 30px 10px 60px;
+    padding-top: 120px;
   }
 }
 body .main-content .container {
@@ -566,6 +532,9 @@ body .main-content .bookings .bookings-list {
   gap: 15px;
   margin-bottom: 20px;
 }
+body .main-content .bookings .bookings-list p {
+  color: white;
+}
 body .main-content .bookings .bookings-list .booking-item {
   display: flex;
   align-items: center;
@@ -612,15 +581,15 @@ body .main-content .bookings .bookings-list .booking-item .booking-status {
 }
 body .main-content .bookings .bookings-list .booking-item .booking-status.completed {
   background: rgba(76, 175, 80, 0.2);
-  color: #4CAF50;
+  color: #4caf50;
 }
 body .main-content .bookings .bookings-list .booking-item .booking-status.upcoming {
   background: rgba(33, 150, 243, 0.2);
-  color: #2196F3;
+  color: #2196f3;
 }
 body .main-content .bookings .bookings-list .booking-item .booking-status.canceled {
   background: rgba(244, 67, 54, 0.2);
-  color: #F44336;
+  color: #f44336;
 }
 body .main-content .bookings .new-booking-btn {
   width: 100%;

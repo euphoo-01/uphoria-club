@@ -1,32 +1,15 @@
 @import "variables";
 @import "mixins";
 @import "fonts";
+@import "base";
 @import "header";
 @import "footer";
 
-* {
-	box-sizing: border-box;
-}
-
-html,
 body {
-	width: 100%;
-	max-width: 100%;
-	overflow-x: hidden;
-	margin: 0;
-	padding: 0;
-}
-
-body {
-	background-color: $background-color;
-	font-family: $font-family;
-	min-height: 100vh;
-	position: relative;
-	overflow-x: hidden;
 	background-image: linear-gradient(
 			rgba(20, 20, 20, 0.9) 1px,
 			transparent 1px
-		),
+		)
 		linear-gradient(90deg, rgba(20, 20, 20, 0.9) 1px, transparent 1px);
 	background-size: 40px 40px;
 	background-position: -1px -1px;
@@ -54,6 +37,12 @@ body {
 		padding: 20px;
 		position: relative;
 		z-index: 1;
+		padding-top: 120px;
+
+		@include mobile {
+			padding: 20px 10px;
+			padding-top: 120px;
+		}
 
 		.container {
 			width: 100%;
@@ -187,6 +176,54 @@ body {
 							width: 150%;
 							height: 180%;
 						}
+					}
+				}
+			}
+
+			.reg-btn {
+				@include transparent-button;
+				width: 100%;
+				padding: 14px 0;
+				margin-top: 16px;
+				position: relative;
+				z-index: 1;
+
+				&::before {
+					content: "";
+					position: absolute;
+					width: 140%;
+					height: 150%;
+					background: $accent-color;
+					border-radius: 50%;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					filter: blur(30px);
+					opacity: 0.2;
+					z-index: -1;
+					transition: all 0.3s ease;
+				}
+
+				&:hover::before {
+					opacity: 0.4;
+					width: 150%;
+					height: 180%;
+					filter: blur(40px);
+				}
+
+				@include mobile {
+					width: 80%;
+					max-width: 280px;
+					align-self: center;
+
+					&::before {
+						width: 140%;
+						height: 150%;
+					}
+
+					&:hover::before {
+						width: 150%;
+						height: 180%;
 					}
 				}
 			}

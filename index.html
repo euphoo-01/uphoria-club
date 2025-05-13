@@ -1,68 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uphorial Club - Компьютерный клуб</title>
-    <link rel="stylesheet" href="css/index.css">
-</head>
-<body>
-    <div class="bg-gradient"> </div>
-    <header>
-        <h3 class="logo">Uphorial Club</h3>
-        <div class="menu-container">
-            <div class="menu">
-                <img src="img/icons/Home.svg" alt="Home" class="home">
-                <img src="img/icons/Info.svg" alt="Info" class="info">
-                <img src="img/icons/Order.svg" alt="Order" class="order">
-                <img src="img/icons/Login.svg" alt="Login" class="login">
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </header>
-    <main>
-        <div class="container">
-            <h1 class="slogan">Играй с комфортом</h1>
-            <h3 class="description">Компьютерный клуб для настоящих геймеров</h3>
-            <button class="action-call" onclick="location.href='../info.html'">Почему мы?</button>
-        </div>
-        
-        <img src="img/Abstract_Metal_shape.png" alt="Shape-1" class="shape-1">
-        <img src="img/Abstract_Metal_shape.png" alt="Shape-2" class="shape-2">
-        <img src="img/Plane.svg" alt="Plane" class="plane">
-    </main>
-    <footer>
-        <div class="footer-container">
-            <div class="footer-column">
-                <h3 class="footer-logo">Uphorial Club</h3>
-                <div class="footer-info">
-                    <p>Телефон: <a href="tel:+375666666666">+375 66 666 66 66</a></p>
-                    <p>Email: <a href="mailto:support@uphorial.club">support@uphorial.club</a></p>
-                    <p>Адрес: г. Минск, ул. Свердлова, 13А</p>
-                </div>
-            </div>
-            <div class="footer-column">
-                <div class="footer-links">
-                    <a href="index.html">Главная</a>
-                    <a href="info.html">О нас</a>
-                    <a href="order.html">Заказать</a>
-                    <a href="account.html">Аккаунт</a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="copyright">© 2025 Uphorial Club. Все права защищены.</div>
-            <div class="footer-social">
-                <a href="#">Instagram</a>
-                <a href="#">VK</a>
-                <a href="#">Telegram</a>
-            </div>
-        </div>
-    </footer>
-    <script src="js/main.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Uphorial Club - Компьютерный клуб</title>
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+		<div class="bg-gradient"></div>
+		<div class="menu-overlay"></div>
+		<header>
+			<h3 class="logo">Uphorial Club</h3>
+			<div class="menu-container">
+				<div class="menu">
+					<img src="img/icons/Home.svg" alt="Home" class="home" />
+					<img src="img/icons/Info.svg" alt="Info" class="info" />
+					<img src="img/icons/Order.svg" alt="Order" class="order" />
+					<img src="img/icons/Login.svg" alt="Login" class="login" />
+				</div>
+				<div class="mobile-menu">
+					<a href="index.html" class="mobile-menu-item">Главная</a>
+					<a href="info.html" class="mobile-menu-item">О нас</a>
+					<a href="order.html" class="mobile-menu-item">Заказать</a>
+					<a href="account.html" class="mobile-menu-item">Аккаунт</a>
+				</div>
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="container">
+				<h1 class="slogan">Играй с комфортом</h1>
+				<h3 class="description">
+					Компьютерный клуб для настоящих геймеров
+				</h3>
+				<button class="action-call" onclick="location.href='info.html'">
+					Почему мы?
+				</button>
+			</div>
+
+			<img
+				src="img/Abstract_Metal_shape.png"
+				alt="Shape-1"
+				class="shape-1"
+			/>
+			<img
+				src="img/Abstract_Metal_shape.png"
+				alt="Shape-2"
+				class="shape-2"
+			/>
+		</main>
+		<footer>
+			<div class="footer-container">
+				<div class="footer-column">
+					<h3 class="footer-logo">Uphorial Club</h3>
+					<div class="footer-info">
+						<p>
+							Телефон:
+							<a href="tel:+375666666666">+375 66 666 66 66</a>
+						</p>
+						<p>
+							Email:
+							<a href="mailto:support@uphorial.club"
+								>support@uphorial.club</a
+							>
+						</p>
+						<p>Адрес: г. Минск, ул. Свердлова, 13А</p>
+					</div>
+				</div>
+				<div class="footer-column">
+					<div class="footer-links">
+						<a href="index.html">Главная</a>
+						<a href="info.html">О нас</a>
+						<a href="order.html">Заказать</a>
+						<a href="account.html">Аккаунт</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="copyright">
+					© 2025 Uphorial Club. Все права защищены.
+				</div>
+				<div class="footer-social">
+					<a href="#">Instagram</a>
+					<a href="#">VK</a>
+					<a href="#">Telegram</a>
+				</div>
+			</div>
+		</footer>
+		<script src="js/main.js"></script>
+	</body>
 </html>
