@@ -47,7 +47,8 @@ body > header {
   border: 1px white solid;
   border-radius: 32px;
   background: rgba(30, 30, 30, 0.2);
-  backdrop-filter: blur(54.75px);
+  -webkit-backdrop-filter: blur(54.75px);
+          backdrop-filter: blur(54.75px);
   padding: 30px 120px;
 }
 @media (max-width: 768px) {
@@ -142,7 +143,8 @@ body > header > .menu-container > .hamburger {
     position: relative;
     padding: 0;
     background: rgba(30, 30, 30, 0.2);
-    backdrop-filter: blur(54.75px);
+    -webkit-backdrop-filter: blur(54.75px);
+            backdrop-filter: blur(54.75px);
     border-radius: 32px;
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
@@ -194,7 +196,8 @@ body > header > .menu-container > .hamburger {
 
 footer {
   background: rgba(20, 20, 20, 0.8);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding: 40px 20px;
   margin-top: 180px;
@@ -449,7 +452,8 @@ body main.main-content .container .features-container .feature-card {
   text-align: left;
   position: relative;
   overflow: hidden;
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   background: rgba(30, 30, 30, 0.7);
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -720,7 +724,8 @@ body main.main-content .pricing-section .pricing-container .pricing-card {
   width: calc(33.333% - 20px);
   min-width: 300px;
   background: rgba(30, 30, 30, 0.7);
-  backdrop-filter: blur(54.75px);
+  -webkit-backdrop-filter: blur(54.75px);
+          backdrop-filter: blur(54.75px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 24px;
   padding: 32px;
@@ -859,7 +864,8 @@ body main.main-content .first-step-section button {
   text-align: center;
   color: #FFFFFF;
   background: rgba(30, 30, 30, 0.2);
-  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
   transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
   width: 320px;
   padding: 14px 0;
@@ -896,6 +902,84 @@ body main.main-content .first-step-section button:hover::before {
     width: 100%;
     max-width: 280px;
   }
+}
+body main.main-content .gallery {
+  margin-top: 60px;
+  font-size: 64px;
+  font-weight: 500;
+  color: #FFFFFF;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  body main.main-content .gallery {
+    font-size: 36px;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+}
+body main.main-content .gallery-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  margin: 0;
+}
+body main.main-content .gallery-section .carousel {
+  position: relative;
+  width: 600px;
+  max-width: 80%;
+  text-align: center;
+}
+body main.main-content .gallery-section .slides {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  scale: 1.25;
+}
+body main.main-content .gallery-section .slide {
+  width: 100%;
+  display: none;
+  border-radius: 10px;
+}
+body main.main-content .gallery-section .slide.active {
+  display: block;
+  animation: fade 0.5s ease-in-out;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body main.main-content .gallery-section .arrow {
+  margin: 0px -5%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(30, 30, 30, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 32px;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  z-index: 2;
+  transition: background-color 0.3s;
+}
+body main.main-content .gallery-section .arrow:hover {
+  background-color: rgb(30, 30, 30);
+}
+body main.main-content .gallery-section .left {
+  left: -30px;
+}
+body main.main-content .gallery-section .right {
+  right: -30px;
 }
 
 h1 {

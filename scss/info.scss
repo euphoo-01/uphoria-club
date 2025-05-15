@@ -6,10 +6,7 @@
 @import "footer";
 
 body {
-	background-image: linear-gradient(
-			rgba(20, 20, 20, 0.9) 1px,
-			transparent 1px
-		)
+	background-image: linear-gradient(rgba(20, 20, 20, 0.9) 1px, transparent 1px)
 		linear-gradient(90deg, rgba(20, 20, 20, 0.9) 1px, transparent 1px);
 	background-size: 40px 40px;
 	background-position: -1px -1px;
@@ -549,11 +546,7 @@ body {
 				}
 
 				.accent-text {
-					background: linear-gradient(
-						90deg,
-						#ffa500 0%,
-						#ff5e00 100%
-					);
+					background: linear-gradient(90deg, #ffa500 0%, #ff5e00 100%);
 					-webkit-background-clip: text;
 					-webkit-text-fill-color: transparent;
 					background-clip: text;
@@ -622,6 +615,91 @@ body {
 					width: 100%;
 					max-width: 280px;
 				}
+			}
+		}
+		.gallery {
+			margin-top: 60px;
+			font-size: 64px;
+			font-weight: 500;
+			color: $p-color;
+			width: 100%;
+
+			@include mobile {
+				font-size: 36px;
+				margin-bottom: 30px;
+				padding: 0;
+			}
+		}
+		.gallery-section {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 500px;
+			margin: 0;
+			.carousel {
+				position: relative;
+				width: 600px;
+				max-width: 80%;
+				text-align: center;
+			}
+
+			.slides {
+				overflow: hidden;
+				border-radius: 10px;
+				box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+				position: relative;
+				scale: 1.25;
+			}
+
+			.slide {
+				width: 100%;
+				display: none;
+				border-radius: 10px;
+
+				&.active {
+					display: block;
+					animation: fade 0.5s ease-in-out;
+				}
+			}
+
+			@keyframes fade {
+				from {
+					opacity: 0;
+				}
+				to {
+					opacity: 1;
+				}
+			}
+
+			.arrow {
+				margin: 0px -5%;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				background-color: rgba(30, 30, 30, 0.5);
+				color: white;
+				border: none;
+				padding: 10px;
+				text-align: center;
+				cursor: pointer;
+				font-size: 32px;
+				width: 64px;
+				height: 64px;
+				border-radius: 100%;
+				z-index: 2;
+				transition: background-color 0.3s;
+
+				&:hover {
+					background-color: rgba(30, 30, 30, 1);
+				}
+			}
+
+			.left {
+				left: -30px;
+			}
+
+			.right {
+				right: -30px;
 			}
 		}
 	}

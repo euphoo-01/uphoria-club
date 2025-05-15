@@ -46,7 +46,8 @@ body > header {
   border: 1px white solid;
   border-radius: 32px;
   background: rgba(30, 30, 30, 0.2);
-  backdrop-filter: blur(54.75px);
+  -webkit-backdrop-filter: blur(54.75px);
+          backdrop-filter: blur(54.75px);
   padding: 30px 120px;
 }
 @media (max-width: 768px) {
@@ -141,7 +142,8 @@ body > header > .menu-container > .hamburger {
     position: relative;
     padding: 0;
     background: rgba(30, 30, 30, 0.2);
-    backdrop-filter: blur(54.75px);
+    -webkit-backdrop-filter: blur(54.75px);
+            backdrop-filter: blur(54.75px);
     border-radius: 32px;
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
@@ -193,7 +195,8 @@ body > header > .menu-container > .hamburger {
 
 footer {
   background: rgba(20, 20, 20, 0.8);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding: 40px 20px;
   margin-top: 180px;
@@ -344,7 +347,8 @@ body main .container button {
   text-align: center;
   color: #FFFFFF;
   background: rgba(30, 30, 30, 0.2);
-  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
   transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
   width: 320px;
   align-self: center;

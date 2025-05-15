@@ -6,10 +6,7 @@
 @import "footer";
 
 body {
-	background-image: linear-gradient(
-			rgba(20, 20, 20, 0.9) 1px,
-			transparent 1px
-		)
+	background-image: linear-gradient(rgba(20, 20, 20, 0.9) 1px, transparent 1px)
 		linear-gradient(90deg, rgba(20, 20, 20, 0.9) 1px, transparent 1px);
 	background-size: 40px 40px;
 	background-position: -1px -1px;
