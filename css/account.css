@@ -14,7 +14,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
   font-family: Rubik;
   overflow-x: hidden;
   width: 100%;
@@ -57,7 +57,7 @@ body > header {
 }
 body > header > .logo {
   font-weight: 300;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 24px;
 }
 body > header > .menu-container {
@@ -115,14 +115,14 @@ body > header > .menu-container > .mobile-menu {
     pointer-events: all;
   }
   body > header > .menu-container > .mobile-menu .mobile-menu-item {
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 24px;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease, transform 0.3s ease;
   }
   body > header > .menu-container > .mobile-menu .mobile-menu-item:hover {
-    color: #FF5E00;
+    color: #ff5e00;
     transform: scale(1.1);
   }
 }
@@ -221,7 +221,7 @@ footer .footer-container {
 footer .footer-container .footer-logo {
   font-size: 24px;
   font-weight: 500;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 footer .footer-container .footer-info {
@@ -235,7 +235,7 @@ footer .footer-container .footer-info p {
   line-height: 1.5;
 }
 footer .footer-container .footer-info p a {
-  color: #FF5E00;
+  color: #ff5e00;
   text-decoration: none;
   transition: opacity 0.3s ease;
 }
@@ -257,7 +257,7 @@ footer .footer-container .footer-links a {
   transition: color 0.3s ease;
 }
 footer .footer-container .footer-links a:hover {
-  color: #FF5E00;
+  color: #ff5e00;
 }
 footer .footer-bottom {
   max-width: 1200px;
@@ -291,7 +291,7 @@ footer .footer-bottom .footer-social a {
   transition: color 0.3s ease;
 }
 footer .footer-bottom .footer-social a:hover {
-  color: #FF5E00;
+  color: #ff5e00;
 }
 
 body {
@@ -346,7 +346,7 @@ body .main-content .auth-card {
   overflow: hidden;
 }
 body .main-content .auth-card .auth-title {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 36px;
   font-weight: 500;
   text-align: center;
@@ -363,7 +363,7 @@ body .main-content .auth-card .auth-form .form-group {
   gap: 8px;
 }
 body .main-content .auth-card .auth-form .form-group label {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 16px;
   text-align: left;
 }
@@ -372,12 +372,12 @@ body .main-content .auth-card .auth-form .form-group input {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   padding: 12px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 16px;
   transition: border-color 0.3s ease;
 }
 body .main-content .auth-card .auth-form .form-group input:focus {
-  border-color: #FF5E00;
+  border-color: #ff5e00;
   outline: none;
 }
 body .main-content .auth-card .auth-form .form-group.remember {
@@ -389,7 +389,7 @@ body .main-content .auth-card .auth-form .form-group.remember .checkbox-containe
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
 }
 body .main-content .auth-card .auth-form .form-group.remember .checkbox-container input[type=checkbox] {
@@ -397,7 +397,7 @@ body .main-content .auth-card .auth-form .form-group.remember .checkbox-containe
   height: 20px;
 }
 body .main-content .auth-card .auth-form .form-group .forgot-password {
-  color: #FF5E00;
+  color: #ff5e00;
   text-decoration: none;
   font-size: 14px;
   align-self: flex-end;
@@ -413,7 +413,7 @@ body .main-content .auth-card .auth-form .auth-button {
   font-style: normal;
   font-weight: 300;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   background: rgba(30, 30, 30, 0.2);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
@@ -433,7 +433,7 @@ body .main-content .auth-card .auth-form .auth-button::before {
   position: absolute;
   width: 140%;
   height: 150%;
-  background: #FF5E00;
+  background: #ff5e00;
   border-radius: 50%;
   top: 50%;
   left: 50%;
@@ -472,7 +472,7 @@ body .main-content .auth-card .reg-btn {
   font-style: normal;
   font-weight: 300;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   background: rgba(30, 30, 30, 0.2);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
@@ -492,7 +492,7 @@ body .main-content .auth-card .reg-btn::before {
   position: absolute;
   width: 140%;
   height: 150%;
-  background: #FF5E00;
+  background: #ff5e00;
   border-radius: 50%;
   top: 50%;
   left: 50%;
@@ -526,10 +526,10 @@ body .main-content .auth-card .reg-btn:hover::before {
 body .main-content .auth-card .register-link {
   margin-top: 24px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 body .main-content .auth-card .register-link a {
-  color: #FF5E00;
+  color: #ff5e00;
   text-decoration: none;
   margin-left: 8px;
 }

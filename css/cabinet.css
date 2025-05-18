@@ -14,7 +14,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
   font-family: Rubik;
   overflow-x: hidden;
   width: 100%;
@@ -57,7 +57,7 @@ body > header {
 }
 body > header > .logo {
   font-weight: 300;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 24px;
 }
 body > header > .menu-container {
@@ -115,14 +115,14 @@ body > header > .menu-container > .mobile-menu {
     pointer-events: all;
   }
   body > header > .menu-container > .mobile-menu .mobile-menu-item {
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 24px;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease, transform 0.3s ease;
   }
   body > header > .menu-container > .mobile-menu .mobile-menu-item:hover {
-    color: #FF5E00;
+    color: #ff5e00;
     transform: scale(1.1);
   }
 }
@@ -221,7 +221,7 @@ footer .footer-container {
 footer .footer-container .footer-logo {
   font-size: 24px;
   font-weight: 500;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 footer .footer-container .footer-info {
@@ -235,7 +235,7 @@ footer .footer-container .footer-info p {
   line-height: 1.5;
 }
 footer .footer-container .footer-info p a {
-  color: #FF5E00;
+  color: #ff5e00;
   text-decoration: none;
   transition: opacity 0.3s ease;
 }
@@ -257,7 +257,7 @@ footer .footer-container .footer-links a {
   transition: color 0.3s ease;
 }
 footer .footer-container .footer-links a:hover {
-  color: #FF5E00;
+  color: #ff5e00;
 }
 footer .footer-bottom {
   max-width: 1200px;
@@ -291,7 +291,7 @@ footer .footer-bottom .footer-social a {
   transition: color 0.3s ease;
 }
 footer .footer-bottom .footer-social a:hover {
-  color: #FF5E00;
+  color: #ff5e00;
 }
 
 body {
@@ -334,7 +334,7 @@ body .main-content .container {
 body .main-content .page-title {
   font-size: 48px;
   font-weight: 500;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -379,7 +379,7 @@ body .main-content .cabinet-card .card-header {
   padding-bottom: 15px;
 }
 body .main-content .cabinet-card .card-header h2 {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 24px;
   font-weight: 500;
   margin: 0;
@@ -397,7 +397,7 @@ body .main-content .cabinet-card button {
   font-style: normal;
   font-weight: 300;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   background: rgba(30, 30, 30, 0.2);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
@@ -417,7 +417,7 @@ body .main-content .cabinet-card button::before {
   position: absolute;
   width: 140%;
   height: 150%;
-  background: #FF5E00;
+  background: #ff5e00;
   border-radius: 50%;
   top: 50%;
   left: 50%;
@@ -490,7 +490,7 @@ body .main-content .user-info .user-details .user-data .data-row .label {
   font-size: 16px;
 }
 body .main-content .user-info .user-details .user-data .data-row .value {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 500;
 }
@@ -515,7 +515,7 @@ body .main-content .stats .stats-container .stat-item {
 body .main-content .stats .stats-container .stat-item .stat-value {
   font-size: 48px;
   font-weight: 500;
-  color: #FF5E00;
+  color: #ff5e00;
   margin-bottom: 5px;
 }
 @media (max-width: 768px) {
@@ -560,7 +560,7 @@ body .main-content .bookings .bookings-list .booking-item .booking-date {
   background: rgba(30, 30, 30, 0.8);
   padding: 8px 12px;
   border-radius: 8px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 500;
   font-size: 16px;
   min-width: 100px;
@@ -570,7 +570,7 @@ body .main-content .bookings .bookings-list .booking-item .booking-details {
   flex: 1;
 }
 body .main-content .bookings .bookings-list .booking-item .booking-details .booking-title {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 5px;
@@ -612,7 +612,7 @@ body .main-content .bonuses .bonuses-content .bonus-balance {
 body .main-content .bonuses .bonuses-content .bonus-balance .bonus-value {
   font-size: 60px;
   font-weight: 500;
-  color: #FF5E00;
+  color: #ff5e00;
   margin-bottom: 5px;
 }
 @media (max-width: 768px) {
@@ -632,16 +632,16 @@ body .main-content .bonuses .bonuses-content .discount-info {
   margin-bottom: 20px;
 }
 body .main-content .bonuses .bonuses-content .discount-info .discount-label {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 18px;
 }
 body .main-content .bonuses .bonuses-content .discount-info .discount-value {
   font-size: 24px;
   font-weight: 500;
-  color: #FF5E00;
+  color: #ff5e00;
 }
 body .main-content .bonuses .bonuses-content .next-level-info .next-level-label {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 16px;
   margin-bottom: 10px;
 }
@@ -654,7 +654,7 @@ body .main-content .bonuses .bonuses-content .next-level-info .progress-bar {
 }
 body .main-content .bonuses .bonuses-content .next-level-info .progress-bar .progress {
   height: 100%;
-  background: #FF5E00;
+  background: #ff5e00;
   border-radius: 5px;
 }
 body .main-content .bonuses .bonuses-content .next-level-info .remaining {

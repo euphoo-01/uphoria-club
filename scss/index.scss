@@ -22,12 +22,14 @@ body {
 		@include mobile {
 			padding: 10px;
 		}
-		@include column;
+		display: flex;
+		flex-flow: column;
 		justify-content: center;
 		align-items: center;
 
 		.container {
-			@include column;
+			display: flex;
+			flex-flow: column;
 			width: 640px;
 			text-align: center;
 			z-index: 1;

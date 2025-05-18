@@ -65,6 +65,13 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 	}
 
+	const registrationButton = document.querySelector(".registration-btn");
+	if (registrationButton) {
+		registrationButton.addEventListener("click", () => {
+			location.href = "account.html";
+		});
+	}
+
 	let currentIndex = 0;
 	const slides = document.querySelectorAll(".slide");
 

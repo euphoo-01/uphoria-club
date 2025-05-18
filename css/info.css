@@ -15,7 +15,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
   font-family: Rubik;
   overflow-x: hidden;
   width: 100%;
@@ -58,7 +58,7 @@ body > header {
 }
 body > header > .logo {
   font-weight: 300;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 24px;
 }
 body > header > .menu-container {
@@ -116,14 +116,14 @@ body > header > .menu-container > .mobile-menu {
     pointer-events: all;
   }
   body > header > .menu-container > .mobile-menu .mobile-menu-item {
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 24px;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease, transform 0.3s ease;
   }
   body > header > .menu-container > .mobile-menu .mobile-menu-item:hover {
-    color: #FF5E00;
+    color: #ff5e00;
     transform: scale(1.1);
   }
 }
@@ -222,7 +222,7 @@ footer .footer-container {
 footer .footer-container .footer-logo {
   font-size: 24px;
   font-weight: 500;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 footer .footer-container .footer-info {
@@ -236,7 +236,7 @@ footer .footer-container .footer-info p {
   line-height: 1.5;
 }
 footer .footer-container .footer-info p a {
-  color: #FF5E00;
+  color: #ff5e00;
   text-decoration: none;
   transition: opacity 0.3s ease;
 }
@@ -258,7 +258,7 @@ footer .footer-container .footer-links a {
   transition: color 0.3s ease;
 }
 footer .footer-container .footer-links a:hover {
-  color: #FF5E00;
+  color: #ff5e00;
 }
 footer .footer-bottom {
   max-width: 1200px;
@@ -292,7 +292,7 @@ footer .footer-bottom .footer-social a {
   transition: color 0.3s ease;
 }
 footer .footer-bottom .footer-social a:hover {
-  color: #FF5E00;
+  color: #ff5e00;
 }
 
 body {
@@ -317,7 +317,7 @@ body .bg-gradient {
 }
 body main.main-content {
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
   align-items: center;
   gap: 80px;
   margin-top: 40px;
@@ -369,7 +369,7 @@ body main.main-content .decor-vector.vector-second {
 }
 body main.main-content .container {
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
   width: 100%;
   max-width: 1200px;
   text-align: center;
@@ -390,7 +390,7 @@ body main.main-content .container .why-us {
   margin-bottom: 60px;
   font-size: 64px;
   font-weight: 500;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 100%;
 }
 @media (max-width: 768px) {
@@ -508,7 +508,7 @@ body main.main-content .container .features-container .feature-card h2 {
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   position: relative;
   z-index: 2;
 }
@@ -537,6 +537,7 @@ body main.main-content .container .features-container .feature-card .card-lines 
   height: 100%;
   z-index: 1;
   pointer-events: none;
+  margin-top: 40px;
 }
 body main.main-content .container .features-container .feature-card .card-lines.top-left {
   top: -30px;
@@ -682,7 +683,7 @@ body main.main-content .pricing-section {
 }
 @media (max-width: 768px) {
   body main.main-content .pricing-section {
-    margin: 20px auto;
+    margin: 40px auto;
   }
 }
 body main.main-content .pricing-section .pricing-container {
@@ -698,6 +699,7 @@ body main.main-content .pricing-section .pricing-container .pricing-row {
   gap: 30px;
   width: 100%;
   flex-wrap: nowrap;
+  margin: 40px auto;
 }
 @media (max-width: 768px) {
   body main.main-content .pricing-section .pricing-container .pricing-row {
@@ -708,7 +710,7 @@ body main.main-content .pricing-section .pricing-container .pricing-row {
 body main.main-content .pricing-section .pricing-container .pricing-title {
   font-size: 48px;
   font-weight: 500;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -737,14 +739,14 @@ body main.main-content .pricing-section .pricing-container .pricing-card:hover {
   transform: translateY(-10px);
 }
 body main.main-content .pricing-section .pricing-container .pricing-card.premium {
-  border-color: #FF5E00;
+  border-color: #ff5e00;
 }
 body main.main-content .pricing-section .pricing-container .pricing-card.premium::before {
   content: "";
   position: absolute;
   width: 150%;
   height: 150%;
-  background: #FF5E00;
+  background: #ff5e00;
   border-radius: 50%;
   top: 50%;
   left: 50%;
@@ -779,7 +781,7 @@ body main.main-content .pricing-section .pricing-container .pricing-card .featur
 }
 body main.main-content .pricing-section .pricing-container .pricing-card .features-list li::before {
   content: "✔";
-  color: #FF5E00;
+  color: #ff5e00;
   flex-shrink: 0;
 }
 body main.main-content .pricing-section .pricing-container .pricing-card .price-block {
@@ -791,7 +793,7 @@ body main.main-content .pricing-section .pricing-container .pricing-card .price-
 body main.main-content .pricing-section .pricing-container .pricing-card .price-block .price {
   font-size: 42px;
   font-weight: 500;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 8px;
 }
 @media (max-width: 768px) {
@@ -817,7 +819,7 @@ body main.main-content .first-step-section {
 body main.main-content .first-step-section .first-step-title {
   font-size: 48px;
   font-weight: 500;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 24px;
 }
 @media (max-width: 768px) {
@@ -852,7 +854,7 @@ body main.main-content .first-step-section .first-step-subtitle::after {
   left: 0;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #FF5E00, transparent);
+  background: linear-gradient(90deg, transparent, #ff5e00, transparent);
 }
 body main.main-content .first-step-section button {
   border: 1px white solid;
@@ -862,7 +864,7 @@ body main.main-content .first-step-section button {
   font-style: normal;
   font-weight: 300;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   background: rgba(30, 30, 30, 0.2);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
@@ -881,7 +883,7 @@ body main.main-content .first-step-section button::before {
   position: absolute;
   width: 140%;
   height: 150%;
-  background: #FF5E00;
+  background: #ff5e00;
   border-radius: 50%;
   top: 50%;
   left: 50%;
@@ -905,15 +907,15 @@ body main.main-content .first-step-section button:hover::before {
 }
 body main.main-content .gallery {
   margin-top: 60px;
+  margin-bottom: 30px;
   font-size: 64px;
   font-weight: 500;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 100%;
 }
 @media (max-width: 768px) {
   body main.main-content .gallery {
     font-size: 36px;
-    margin-bottom: 30px;
     padding: 0;
   }
 }
@@ -921,13 +923,18 @@ body main.main-content .gallery-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 600px;
   margin: 0;
+}
+@media (max-width: 768px) {
+  body main.main-content .gallery-section {
+    height: 400px;
+  }
 }
 body main.main-content .gallery-section .carousel {
   position: relative;
-  width: 600px;
-  max-width: 80%;
+  width: 1000px;
+  max-width: 90%;
   text-align: center;
 }
 body main.main-content .gallery-section .slides {
@@ -935,7 +942,6 @@ body main.main-content .gallery-section .slides {
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   position: relative;
-  scale: 1.25;
 }
 body main.main-content .gallery-section .slide {
   width: 100%;
@@ -955,13 +961,12 @@ body main.main-content .gallery-section .slide.active {
   }
 }
 body main.main-content .gallery-section .arrow {
-  margin: 0px -5%;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   background-color: rgba(30, 30, 30, 0.5);
   color: white;
-  border: none;
+  border: 1px #999999 solid;
   padding: 10px;
   text-align: center;
   cursor: pointer;
@@ -976,17 +981,17 @@ body main.main-content .gallery-section .arrow:hover {
   background-color: rgb(30, 30, 30);
 }
 body main.main-content .gallery-section .left {
-  left: -30px;
+  left: -40px;
 }
 body main.main-content .gallery-section .right {
-  right: -30px;
+  right: -40px;
 }
 
 h1 {
   font-size: 64px;
   font-weight: 500;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 @media (max-width: 768px) {
   h1 {
@@ -996,7 +1001,7 @@ h1 {
 
 h2 {
   font-size: 36px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 500;
 }
 @media (max-width: 768px) {

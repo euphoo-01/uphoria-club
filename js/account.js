@@ -24,7 +24,7 @@ function formatBookingTime(booking) {
 }
 
 function displayBookings(bookings, container) {
-	container.innerHTML = ""; // Очищаем статические бронирования
+	container.innerHTML = "";
 	if (bookings.length === 0) {
 		container.innerHTML = "<p>У вас нет бронирований.</p>";
 		return;
@@ -50,8 +50,8 @@ function displayBookings(bookings, container) {
             <div class="booking-date">${bookingDate}</div>
             <div class="booking-details">
                 <div class="booking-title">${
-					tariffNames[booking.tariff]
-				} #${Math.floor(Math.random() * 10 + 1)}</div>
+									tariffNames[booking.tariff]
+								} #${Math.floor(Math.random() * 10 + 1)}</div>
                 <div class="booking-time">${formatBookingTime(booking)}</div>
             </div>
             <div class="booking-status ${booking.status}">${
@@ -124,9 +124,9 @@ document.addEventListener("DOMContentLoaded", () => {
 		window.location.href = "account.html";
 	});
 
-	const newBookingBtn = document.querySelector(".new-booking-btn");
-	if (newBookingBtn) {
-		newBookingBtn.addEventListener("click", () => {
+	const BookingBtn = document.querySelector(".new-booking-btn");
+	if (BookingBtn) {
+		BookingBtn.addEventListener("click", () => {
 			window.location.href = "order.html";
 		});
 	}

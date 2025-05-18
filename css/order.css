@@ -15,7 +15,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
   font-family: Rubik;
   overflow-x: hidden;
   width: 100%;
@@ -58,7 +58,7 @@ body > header {
 }
 body > header > .logo {
   font-weight: 300;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 24px;
 }
 body > header > .menu-container {
@@ -116,14 +116,14 @@ body > header > .menu-container > .mobile-menu {
     pointer-events: all;
   }
   body > header > .menu-container > .mobile-menu .mobile-menu-item {
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 24px;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease, transform 0.3s ease;
   }
   body > header > .menu-container > .mobile-menu .mobile-menu-item:hover {
-    color: #FF5E00;
+    color: #ff5e00;
     transform: scale(1.1);
   }
 }
@@ -222,7 +222,7 @@ footer .footer-container {
 footer .footer-container .footer-logo {
   font-size: 24px;
   font-weight: 500;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 footer .footer-container .footer-info {
@@ -236,7 +236,7 @@ footer .footer-container .footer-info p {
   line-height: 1.5;
 }
 footer .footer-container .footer-info p a {
-  color: #FF5E00;
+  color: #ff5e00;
   text-decoration: none;
   transition: opacity 0.3s ease;
 }
@@ -258,7 +258,7 @@ footer .footer-container .footer-links a {
   transition: color 0.3s ease;
 }
 footer .footer-container .footer-links a:hover {
-  color: #FF5E00;
+  color: #ff5e00;
 }
 footer .footer-bottom {
   max-width: 1200px;
@@ -292,7 +292,7 @@ footer .footer-bottom .footer-social a {
   transition: color 0.3s ease;
 }
 footer .footer-bottom .footer-social a:hover {
-  color: #FF5E00;
+  color: #ff5e00;
 }
 
 body {
@@ -317,7 +317,7 @@ body .bg-gradient {
 }
 body main.main-content {
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
   align-items: center;
   gap: 80px;
   margin-top: 40px;
@@ -368,7 +368,7 @@ body main.main-content .decor-vector.vector-second {
 }
 body main.main-content .container {
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
   width: 100%;
   max-width: 1200px;
   text-align: center;
@@ -389,7 +389,7 @@ body main.main-content .container .order-title {
   margin-bottom: 60px;
   font-size: 64px;
   font-weight: 500;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 100%;
 }
 @media (max-width: 768px) {
@@ -451,20 +451,24 @@ body main.main-content .container .order-form-container .order-form .form-group 
   text-align: left;
 }
 body main.main-content .container .order-form-container .order-form .form-group label {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 16px;
 }
-body main.main-content .container .order-form-container .order-form .form-group input, body main.main-content .container .order-form-container .order-form .form-group select, body main.main-content .container .order-form-container .order-form .form-group textarea {
+body main.main-content .container .order-form-container .order-form .form-group input,
+body main.main-content .container .order-form-container .order-form .form-group select,
+body main.main-content .container .order-form-container .order-form .form-group textarea {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   padding: 12px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 16px;
   transition: border-color 0.3s ease;
 }
-body main.main-content .container .order-form-container .order-form .form-group input:focus, body main.main-content .container .order-form-container .order-form .form-group select:focus, body main.main-content .container .order-form-container .order-form .form-group textarea:focus {
-  border-color: #FF5E00;
+body main.main-content .container .order-form-container .order-form .form-group input:focus,
+body main.main-content .container .order-form-container .order-form .form-group select:focus,
+body main.main-content .container .order-form-container .order-form .form-group textarea:focus {
+  border-color: #ff5e00;
   outline: none;
 }
 body main.main-content .container .order-form-container .order-form .form-group textarea {
@@ -479,7 +483,7 @@ body main.main-content .container .order-form-container .order-form .order-butto
   font-style: normal;
   font-weight: 300;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   background: rgba(30, 30, 30, 0.2);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
@@ -499,7 +503,7 @@ body main.main-content .container .order-form-container .order-form .order-butto
   position: absolute;
   width: 140%;
   height: 150%;
-  background: #FF5E00;
+  background: #ff5e00;
   border-radius: 50%;
   top: 50%;
   left: 50%;
@@ -531,7 +535,7 @@ body main.main-content .container .info-card .card-header {
 }
 body main.main-content .container .info-card .card-header h2 {
   font-size: 28px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 500;
 }
 body main.main-content .container .info-card .card-body p {
@@ -554,19 +558,22 @@ body main.main-content .container .info-card .card-body .benefits-list li {
 }
 body main.main-content .container .info-card .card-body .benefits-list li::before {
   content: "✔";
-  color: #FF5E00;
+  color: #ff5e00;
   flex-shrink: 0;
 }
-body main.main-content .container .info-card .card-body .working-hours, body main.main-content .container .info-card .card-body .contact-info {
+body main.main-content .container .info-card .card-body .working-hours,
+body main.main-content .container .info-card .card-body .contact-info {
   margin-bottom: 32px;
 }
-body main.main-content .container .info-card .card-body .working-hours h3, body main.main-content .container .info-card .card-body .contact-info h3 {
+body main.main-content .container .info-card .card-body .working-hours h3,
+body main.main-content .container .info-card .card-body .contact-info h3 {
   font-size: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 12px;
   font-weight: 500;
 }
-body main.main-content .container .info-card .card-body .working-hours p, body main.main-content .container .info-card .card-body .contact-info p {
+body main.main-content .container .info-card .card-body .working-hours p,
+body main.main-content .container .info-card .card-body .contact-info p {
   margin-bottom: 8px;
   font-size: 14px;
 }

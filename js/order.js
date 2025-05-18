@@ -35,9 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	form.addEventListener("submit", (event) => {
 		event.preventDefault();
 		const bookingData = {
-			name: form.querySelector("#name").value,
-			phone: form.querySelector("#phone").value,
-			email: form.querySelector("#email").value,
 			tariff: form.querySelector("#tariff").value,
 			date: form.querySelector("#date").value,
 			time: form.querySelector("#time").value,

@@ -22,16 +22,6 @@
 	}
 }
 
-@mixin column {
-	display: flex;
-	flex-direction: column;
-}
-
-@mixin row {
-	display: flex;
-	flex-direction: row;
-}
-
 @mixin glass-box {
 	margin: 5px;
 	padding: 10px;
