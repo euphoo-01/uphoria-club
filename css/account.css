@@ -50,7 +50,7 @@ body > header {
           backdrop-filter: blur(54.75px);
   padding: 30px 120px;
 }
-@media (max-width: 768px) {
+@media (max-width: 728px) {
   body > header {
     padding: 12px 20px;
   }
@@ -65,7 +65,7 @@ body > header > .menu-container {
   flex-direction: row;
   align-items: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 728px) {
   body > header > .menu-container {
     position: relative;
   }
@@ -83,7 +83,7 @@ body > header > .menu-container > .menu > img:hover {
   cursor: pointer;
   opacity: 0.7;
 }
-@media (max-width: 768px) {
+@media (max-width: 728px) {
   body > header > .menu-container > .menu {
     display: none;
   }
@@ -92,7 +92,7 @@ body > header > .menu-container > .mobile-menu {
   display: none;
   margin: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 728px) {
   body > header > .menu-container > .mobile-menu {
     display: flex;
     flex-direction: column;
@@ -132,7 +132,7 @@ body > header > .menu-container > .hamburger {
   z-index: 700;
   margin-left: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 728px) {
   body > header > .menu-container > .hamburger {
     display: flex;
     align-items: center;
@@ -210,7 +210,7 @@ footer .footer-container {
   flex-wrap: wrap;
   gap: 30px;
 }
-@media (max-width: 768px) {
+@media (max-width: 728px) {
   footer .footer-container {
     flex-direction: column;
     align-items: center;
@@ -246,7 +246,7 @@ footer .footer-container .footer-links {
   display: flex;
   gap: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 728px) {
   footer .footer-container .footer-links {
     justify-content: center;
   }
@@ -270,7 +270,7 @@ footer .footer-bottom {
   flex-wrap: wrap;
   gap: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 728px) {
   footer .footer-bottom {
     flex-direction: column;
     align-items: center;
@@ -322,7 +322,7 @@ body .main-content {
   z-index: 1;
   padding-top: 120px;
 }
-@media (max-width: 768px) {
+@media (max-width: 728px) {
   body .main-content {
     padding: 20px 10px;
     padding-top: 120px;
@@ -449,7 +449,7 @@ body .main-content .auth-card .auth-form .auth-button:hover::before {
   height: 180%;
   filter: blur(40px);
 }
-@media (max-width: 768px) {
+@media (max-width: 728px) {
   body .main-content .auth-card .auth-form .auth-button {
     width: 80%;
     max-width: 280px;
@@ -508,7 +508,7 @@ body .main-content .auth-card .reg-btn:hover::before {
   height: 180%;
   filter: blur(40px);
 }
-@media (max-width: 768px) {
+@media (max-width: 728px) {
   body .main-content .auth-card .reg-btn {
     width: 80%;
     max-width: 280px;
@@ -547,7 +547,7 @@ body .main-content .shape-1 {
   height: auto;
   opacity: 0.7;
 }
-@media (max-width: 768px) {
+@media (max-width: 728px) {
   body .main-content .shape-1 {
     width: 400px;
     left: -150px;
@@ -566,7 +566,7 @@ body .main-content .shape-2 {
   height: auto;
   opacity: 0.7;
 }
-@media (max-width: 768px) {
+@media (max-width: 728px) {
   body .main-content .shape-2 {
     width: 340px;
     right: -20px;

@@ -93,4 +93,4 @@ document.addEventListener("DOMContentLoaded", () => {
 		currentIndex = (currentIndex + 1) % slides.length;
 		showSlide(currentIndex);
 	});
-});
+	});
