@@ -26,11 +26,11 @@ document.addEventListener("DOMContentLoaded", () => {
 	const form = document.querySelector(".order-form");
 	const currentUser = localStorage.getItem(CURRENT_USER_KEY);
 
-	if (!currentUser) {
-		alert("Пожалуйста, авторизуйтесь для бронирования");
-		window.location.href = "account.html";
-		return;
-	}
+	// if (!currentUser) {
+	// 	alert("Пожалуйста, авторизуйтесь для бронирования");
+	// 	window.location.href = "account.html";
+	// 	return;
+	// }
 
 	form.addEventListener("submit", (event) => {
 		event.preventDefault();
