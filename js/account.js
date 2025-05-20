@@ -66,11 +66,11 @@ function displayBookings(bookings, container) {
 document.addEventListener("DOMContentLoaded", () => {
 	const currentUser = localStorage.getItem(CURRENT_USER_KEY);
 
-	// if (!currentUser) {
-	// 	alert("Пожалуйста, авторизуйтесь");
-	// 	window.location.href = "account.html";
-	// 	return;
-	// }
+	if (!currentUser) {
+		alert("Пожалуйста, авторизуйтесь");
+		window.location.href = "account.html";
+		return;
+	}
 
 	const userData = getUserData(currentUser);
 
