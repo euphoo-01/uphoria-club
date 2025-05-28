@@ -535,6 +535,7 @@ body .main-content .auth-card .register-link a {
 }
 body .main-content .auth-card .register-link a:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 body .main-content .shape-1 {
   position: absolute;
